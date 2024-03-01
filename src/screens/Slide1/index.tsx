@@ -1,4 +1,5 @@
 import { ImageBackground, Image, View, Text } from "react-native";
+import { Footer1 } from '../../components/Footer/index'
 import { styles } from "./styles";
 
 export function Slide1(){
@@ -9,10 +10,11 @@ export function Slide1(){
         <ImageBackground source={background} style={styles.container}> 
             <View style={styles.background}>
                 <View style={styles.primary}>
-                    <Image style={styles.image} source={title}/>
-                    <Image style={styles.image} source={hammer}/> 
+                    <Image source={title}/>
+                    <Image source={hammer}/> 
                     <Text style={styles.text}>Aprenda a construir o seu primeiro jogo com a gente</Text>
                 </View>
+                <Footer1/>
             </View>
         </ImageBackground>
     )
