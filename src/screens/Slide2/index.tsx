@@ -1,8 +1,8 @@
 import { ImageBackground, Image, View, Text } from "react-native";
-import { Footer2 } from '../../components/Footer/index'
+import { Footer } from '../../components/Footer/index'
 import { styles } from "./styles";
 
-export function Slide1(){
+export function Slide2(){
     const background = require("../../assets/background.png");
     const money = require("../../assets/money_screen2.png");
     const title = require("../../assets/title.png");
@@ -12,9 +12,9 @@ export function Slide1(){
                 <View style={styles.primary}>
                     <Image source={title}/>
                     <Image source={money}/> 
-                    <Text style={styles.text}>Aprenda a construir o seu primeiro jogo com a gente</Text>
+                    <Text style={styles.text}>O curso é para todas os níveis e totalmente gratuito</Text>
                 </View>
-                <Footer2/>
+                <Footer/>
             </View>
         </ImageBackground>
     )

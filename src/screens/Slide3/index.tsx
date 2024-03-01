@@ -1,20 +1,20 @@
 import { ImageBackground, Image, View, Text } from "react-native";
-import { Footer1 } from '../../components/Footer/index'
+import { Footer } from '../../components/Footer/index'
 import { styles } from "./styles";
 
-export function Slide1(){
+export function Slide3(){
     const background = require("../../assets/background.png");
-    const hammer = require("../../assets/hammer_screen1.png");
+    const block = require("../../assets/block_screen3.png");
     const title = require("../../assets/title.png");
     return(
         <ImageBackground source={background} style={styles.container}> 
             <View style={styles.background}>
                 <View style={styles.primary}>
-                    <Image style={styles.image} source={title}/>
-                    <Image style={styles.image} source={hammer}/> 
-                    <Text style={styles.text}>Aprenda a construir o seu primeiro jogo com a gente</Text>
+                    <Image source={title}/>
+                    <Image source={block}/> 
+                    <Text style={styles.text}>No final, você receberá um certificado e ficará pronto para o mercado de games</Text>
                 </View>
-                <Footer1/>
+                <Footer/>
             </View>
         </ImageBackground>
     )

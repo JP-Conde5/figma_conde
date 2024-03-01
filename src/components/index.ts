@@ -1,2 +1,2 @@
 export { Background } from './Background/index'
-export { Footer1 } from './Footer/index'
+export { Footer } from './Footer/index'

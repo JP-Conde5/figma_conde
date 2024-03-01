@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Image, View } from "react-native";
+import { Image, View, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 
-export function Footer1(){
+export function Footer(){
     const select = require("../../assets/screen_select.png");
     const free = require("../../assets/screen_free.png");
     let [img1, img2, img3] = [free, free, free]
@@ -22,9 +22,9 @@ export function Footer1(){
     }
     return(
         <View style={styles.footer}>
-            <Image source={img1}/>
-            <Image source={img2}/> 
-            <Image source={img3}/> 
+            <TouchableOpacity onPress={() => {setState(1)}}/><Image source={img1}/></TouchableOpacity>
+            <TouchableOpacity onPress={() => {setState(2)}}><Image source={img2}/> </TouchableOpacity>
+            <TouchableOpacity onPress={() => {setState(3)}}><Image source={img3}/> </TouchableOpacity>
         </View>
     )
 }
