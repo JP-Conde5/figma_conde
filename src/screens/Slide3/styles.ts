@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native"; 
+import { colors } from "../../styles/GlobalStyle";
 
 export const styles = StyleSheet.create({
     container: {
@@ -6,7 +7,7 @@ export const styles = StyleSheet.create({
     },
     background: {
         flex: 1,
-        backgroundColor: 'rgba(165, 210, 225, 0.7)',
+        backgroundColor: colors.secondary,
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -19,7 +20,7 @@ export const styles = StyleSheet.create({
     text: {
         fontSize: 35,
         textAlign: 'center',
-        color: 'rgb(255, 236, 64)',
-        fontFamily: ''
+        color: colors.primary,
+        fontFamily: 'Coiny_400Regular'
     },
 })
