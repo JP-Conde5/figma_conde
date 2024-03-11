@@ -4,7 +4,7 @@ import { styles } from "./styles";
 import { globalStyle } from "../../styles/GlobalStyle";
 import { IPage } from "../../../App";
 
-export function Slide3({setPage}:IPage){
+export function Slide3({setPage, page}:IPage){
     const background = require("../../assets/background.png");
     const block = require("../../assets/block_screen3.png");
     const title = require("../../assets/title.png");
@@ -16,7 +16,7 @@ export function Slide3({setPage}:IPage){
                     <Image source={block}/> 
                     <Text style={styles.text}>No final, você receberá um certificado e ficará pronto para o mercado de games</Text>
                 </View>
-                <Footer/>
+                <Footer page={page} setPage={setPage}/>
             </View>
         </ImageBackground>
     )

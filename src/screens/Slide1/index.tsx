@@ -4,7 +4,7 @@ import { Footer } from '../../components/Footer/index';
 import { styles } from "./styles";
 import { IPage } from "../../../App";
 
-export function Slide1({setPage}:IPage){
+export function Slide1({page, setPage}:IPage){
     const background = require("../../assets/background.png");
     const hammer = require("../../assets/hammer_screen1.png");
     const title = require("../../assets/title.png");
@@ -16,7 +16,7 @@ export function Slide1({setPage}:IPage){
                     <Image source={hammer}/> 
                     <Text style={styles.text}>Aprenda a construir o seu primeiro jogo com a gente</Text>
                 </View>
-                <Footer/>
+                <Footer page={page} setPage={setPage}/>
             </View>
         </ImageBackground>
     )

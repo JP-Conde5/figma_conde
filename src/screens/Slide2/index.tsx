@@ -4,7 +4,7 @@ import { styles } from "./styles";
 import { globalStyle } from "../../styles/GlobalStyle";
 import { IPage } from "../../../App";
 
-export function Slide2({setPage}:IPage){
+export function Slide2({setPage, page}:IPage){
     const background = require("../../assets/background.png");
     const money = require("../../assets/money_screen2.png");
     const title = require("../../assets/title.png");
@@ -16,7 +16,7 @@ export function Slide2({setPage}:IPage){
                     <Image source={money}/> 
                     <Text style={styles.text}>O curso é para todas os níveis e totalmente gratuito</Text>
                 </View>
-                <Footer/>
+                <Footer page={page} setPage={setPage}/>
             </View>
         </ImageBackground>
     )
