@@ -1,7 +1,6 @@
 import { Slide1, Slide2, Slide3 } from "./src/screens"
 import { Coiny_400Regular, useFonts } from '@expo-google-fonts/coiny';
 import { Dispatch, SetStateAction, useState } from "react";
-import { Text } from "react-native";
 export interface IPage{
   page: number,
   setPage: Dispatch<SetStateAction<number>>
@@ -15,11 +14,6 @@ export default function App() {
   if (!fontsLoaded){
     return null
   }
-  /*
-  return (
-    <Slide page={page} setPage={setPage}/>
-  )
-  */
   if(page == 1){
     return (
       <Slide1 page={page} setPage={setPage}/>
@@ -31,6 +25,10 @@ export default function App() {
   }else if(page == 3){
     return (
       <Slide3 page={page} setPage={setPage}/>
+    )
+  }else{
+    return (
+      <Slide1 page={page} setPage={setPage}/>
     )
   }
 }

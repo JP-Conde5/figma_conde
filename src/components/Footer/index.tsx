@@ -1,14 +1,14 @@
 import { View } from "react-native";
 import { styles } from "./styles";
-import { Buttons } from "../Buttons"
+import { Mushroom } from "../Mushroom"
 import { IPage } from "../../../App";
 
 export function Footer({setPage, page}:IPage){
-    const select = require("../../assets/screen_select.png");
-    const free = require("../../assets/screen_free.png");
     return(
         <View style={styles.footer}>
-            <Buttons page={page} setPage={setPage} />
+            <Mushroom color={page == 1} onPressI={() => setPage(1)} />
+            <Mushroom color={page == 2} onPressI={() => setPage(2)} />
+            <Mushroom color={page == 3} onPressI={() => setPage(3)} />
         </View>
     ) 
 }
