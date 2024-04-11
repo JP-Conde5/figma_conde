@@ -11,7 +11,7 @@ export function Slide3({setPage, page}:IPage){
         <Background>
             <View style={styles.primary}>
                 <Image source={title}/>
-                <Image source={block}/> 
+                <Image style={styles.image} source={block}/> 
                 <Text style={styles.text}>No final, você receberá um certificado e ficará pronto para o mercado de games</Text>
             </View>
             <Footer page={page} setPage={setPage}/>

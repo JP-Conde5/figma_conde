@@ -11,7 +11,7 @@ export function Slide1({page, setPage}:IPage){
         <Background>
             <View style={styles.primary}>
                 <Image source={title}/>
-                <Image source={hammer}/> 
+                <Image style={styles.image} source={hammer}/> 
                 <Text style={styles.text}>Aprenda a construir o seu primeiro jogo com a gente</Text>
             </View>
             <Footer page={page} setPage={setPage}/>

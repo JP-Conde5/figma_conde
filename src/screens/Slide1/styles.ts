@@ -4,9 +4,13 @@ import { colors } from '../../styles/GlobalStyle';
 export const styles = StyleSheet.create({
     primary: {
         alignItems: 'center',
-        justifyContent: 'space-around',
-        flex: 0.7,
+        justifyContent: 'center',
+        flex: 1,
         width: 300,
+    },
+    image:{
+        marginBottom: 30,
+        marginTop: 100,
     },
     text: {
         fontSize: 40,

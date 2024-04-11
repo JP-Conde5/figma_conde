@@ -1,4 +1,5 @@
 import { Slide1, Slide2, Slide3 } from "./src/screens"
+import { Navigation } from "./src/navigation/index"
 import { Coiny_400Regular, useFonts } from '@expo-google-fonts/coiny';
 import { Dispatch, SetStateAction, useState } from "react";
 export interface IPage{
@@ -25,6 +26,10 @@ export default function App() {
   }else if(page == 3){
     return (
       <Slide3 page={page} setPage={setPage}/>
+    )
+  }else if(page==4){
+    return(
+      <Navigation/>
     )
   }else{
     return (
