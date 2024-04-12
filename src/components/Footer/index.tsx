@@ -1,6 +1,7 @@
 import { View } from "react-native";
 import { styles } from "./styles";
-import { Mushroom } from "../Mushroom"
+import { Mushroom } from "../Mushroom";
+import { Arrow } from "../Arrow"
 import { IPage } from "../../../App";
 
 export function Footer({setPage, page}:IPage){
@@ -11,8 +12,8 @@ export function Footer({setPage, page}:IPage){
                 <Mushroom color={page == 2} onPressI={() => setPage(2)} />
                 <Mushroom color={page == 3} onPressI={() => setPage(3)} />
             </View>
-            <View>
-                
+            <View style={styles.arrow}>
+                <Arrow OnPressI={() => setPage(4)}/>
             </View>
         </View>
     ) 

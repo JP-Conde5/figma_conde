@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     },
     image:{
         marginBottom: 30,
-        marginTop: 100,
+        marginTop: 50,
     },
     text: {
         fontSize: 40,

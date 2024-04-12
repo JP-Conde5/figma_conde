@@ -1,6 +1,5 @@
 import React from "react";
 import { TouchableOpacity, Image, TouchableOpacityProps } from "react-native";
-import { IPage } from "../../../App";
 
 export interface Ibutton extends TouchableOpacityProps{
     onPressI: () => void;

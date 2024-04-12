@@ -12,7 +12,7 @@ export function Slide2({setPage, page}:IPage){
             <View style={styles.primary}>
                 <Image source={title}/>
                 <Image style={styles.image} source={money}/> 
-                <Text style={styles.text}>O curso é para todas os níveis e totalmente gratuito</Text>
+                <Text style={styles.text}>O curso é para todos os níveis e totalmente gratuito</Text>
             </View>
             <Footer page={page} setPage={setPage}/>
         </Background>
